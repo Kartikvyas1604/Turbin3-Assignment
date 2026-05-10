@@ -1,0 +1,10 @@
+{
+  "name": "monkeydao-Assignment-edition",
+  "symbol": "MONKEYDAO",
+  "description": "Assignment NFT minted with MPL Core.",
+  "image": "https://t4.ftcdn.net/jpg/05/52/85/41/240_F_552854171_ALJli0fE4oFN6wXW5NqKG3TtSW4C7s9n.jpg",
+  "attributes": [
+    { "trait_type": "course", "value": "week-2" },
+    { "trait_type": "tool", "value": "mpl-core" }
+  ]
+}
