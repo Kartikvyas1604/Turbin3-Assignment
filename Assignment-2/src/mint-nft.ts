@@ -5,6 +5,7 @@ import {
   createSignerFromKeypair,
   generateSigner,
   keypairIdentity,
+  publicKey,
 } from '@metaplex-foundation/umi';
 
 const rpcUrl = process.env.RPC_URL ?? 'https://api.devnet.solana.com';
@@ -18,6 +19,7 @@ if (!keypairPath) {
 
 const name = process.env.NFT_NAME ?? 'Week 2 Core NFT';
 const uri = process.env.METADATA_URI ?? 'https://example.com/asset.json';
+const ownerAddress = process.env.NFT_OWNER_ADDRESS;
 
 const secretKey = Uint8Array.from(JSON.parse(await readFile(keypairPath, 'utf8')));
 
@@ -32,6 +34,7 @@ const result = await create(umi, {
   name,
   uri,
   asset: assetSigner,
+  owner: ownerAddress ? publicKey(ownerAddress) : undefined,
   plugins: [
     {
       type: 'Attributes',
