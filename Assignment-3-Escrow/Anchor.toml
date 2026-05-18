@@ -5,6 +5,9 @@ skip-lint = false
 [programs.localnet]
 escrow = "CVHSKiTKrivVkVy1Z8M2E1nBEKVddisehdPs5eW9qgKw"
 
+[programs.devnet]
+escrow = "CVHSKiTKrivVkVy1Z8M2E1nBEKVddisehdPs5eW9qgKw"
+
 [toolchain]
 anchor_version = "0.31.0"
 
