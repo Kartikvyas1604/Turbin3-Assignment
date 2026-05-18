@@ -1,0 +1,31 @@
+# Rust / Cargo
+target/
+**/*.rs.bk
+*.pdb
+
+# Anchor
+.anchor/
+test-ledger/
+
+# Solana
+*.so
+
+# Node / npm (for Anchor TS tests if any)
+node_modules/
+package-lock.json
+yarn.lock
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Env
+.env
+.env.*
+
+# Logs
+*.log
