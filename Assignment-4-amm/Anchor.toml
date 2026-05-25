@@ -1,0 +1,19 @@
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+amm = "CJZU4fsC4LZGkCyRw3AoMKM8y1GQWGCmnuu5kTBbMece"
+
+[programs.devnet]
+amm = "CJZU4fsC4LZGkCyRw3AoMKM8y1GQWGCmnuu5kTBbMece"
+
+[toolchain]
+anchor_version = "0.31.0"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "cargo test -p amm"
