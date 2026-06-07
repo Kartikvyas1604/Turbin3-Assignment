@@ -1,0 +1,20 @@
+[toolchain]
+package_manager = "npm"
+anchor_version = "0.31.0"
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+nft_staking = "6uyxk3pVKKVf7sCdqApLwhWC4KG9rk2w8HU9VrLQRXHv"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
